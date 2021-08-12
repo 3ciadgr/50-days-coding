@@ -1,14 +1,19 @@
+/* Importing google font url */
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
+/* v - viewport */
 body{
     font-family: 'Muli', sans-serif;
+
+    /* For centering */
     display: flex;
     align-items: center;
     justify-content: center;
+
     height: 100vh;
     overflow: hidden;
     margin: 0;
