@@ -1,3 +1,4 @@
+// Initializing the constants by getting the classes
 const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
@@ -6,6 +7,7 @@ const circles = document.querySelectorAll('.circle')
 
 let currentActive = 1
 
+// Adding active class to the design when the next button is clicked
 next.addEventListener('click', () => {
     currentActive++
 
@@ -16,6 +18,7 @@ next.addEventListener('click', () => {
     update()
 })
 
+// Removing active class to the design when the prev button is clicked
 prev.addEventListener('click', () => {
     currentActive--
 
@@ -26,6 +29,8 @@ prev.addEventListener('click', () => {
     update()
 })
 
+
+// update function that is called within the event listeners above
 function update() {
     circles.forEach((circle, idx) => {
         if (idx < currentActive) {

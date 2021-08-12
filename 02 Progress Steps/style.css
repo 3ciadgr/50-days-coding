@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Initializes the colors  */
 :root {
     --line-border-fill: #3498db;
     --line-border-empty: #e0e0e0;
@@ -33,6 +34,7 @@ body{
     width: 350px;
 }
 
+/* Before clicked */
 .progress-container::before {
     content: '';
     background-color: var(--line-border-empty);
@@ -46,6 +48,7 @@ body{
     transition: .4s ease;
 }
 
+/* After clicked */
 .progress {
     background-color: var(--line-border-fill);
     position: absolute;
